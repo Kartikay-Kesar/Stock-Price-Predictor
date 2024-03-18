@@ -1,0 +1,109 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    color:yellowgreen;
+}
+
+/* anchor tag */
+a
+{
+    text-decoration: none;
+}
+
+/* navbar */
+.navbar
+{
+    /* border-top: 1px solid yellowgreen; */
+    display: flex;
+    width:100vw;
+    border-bottom : 1px solid yellowgreen;
+}
+
+#spp
+{
+    margin-top: 3px;
+}
+
+.logos
+{
+    display: flex;
+    width:50vw;
+}
+
+/* logo image */
+img
+{
+    height:30px;
+    width:30px;
+    display: inline;
+}
+
+/* div options */
+
+.options
+{
+    margin-top:3px;
+    display: flex;
+    width:50vw;
+    justify-content:space-evenly;
+}
+
+.container
+{
+    margin-top: 100px;
+    height:450px;
+    width:100vw;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-bottom: 1px solid yellowgreen;
+}
+#stock_price_text
+{
+    display:flex;
+    width:300px;
+    height: 300px;
+    font-size:30px;
+    font-weight: bolder;
+    flex-direction: column;
+    align-items: flex-start;
+    animation-name:animatetext;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+
+p
+{
+    font-size: 20px;
+}
+
+@keyframes animatetext
+{
+    from
+    {
+        width:50px;
+        font-size:2px;
+    }
+    to 
+    {
+        width:300px;
+        font-size:30px;
+        font-weight: bolder;
+    }    
+}
+/* stock image */
+
+.stock_image
+{
+    height:250px;
+    width:250px;
+    margin-top:90px;
+    background-color : white;
+    background-image: url(resources/stock_image.jpeg);
+    background-size: cover;
+    border : 1px solid yellowgreen;
+}
